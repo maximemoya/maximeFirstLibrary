@@ -1,7 +1,7 @@
 # What is it ?
 
 # How to install :
-`npm i maximeFirstLibrary --save`
+`npm i maximefirstlibrary --save`
 
 Then...
 ```
