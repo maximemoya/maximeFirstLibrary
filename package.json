@@ -1,10 +1,9 @@
 {
   "name": "maximefirstlibrary",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a simple first library",
-  "main": "dist/cjs/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
@@ -15,8 +14,10 @@
   "scripts": {
     "build": "rm -rf dist/ && tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "maxime-libs"
+  ],
+  "author": "maxime",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.2"
