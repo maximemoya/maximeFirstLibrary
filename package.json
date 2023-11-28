@@ -1,19 +1,19 @@
 {
   "name": "maximefirstlibrary",
   "version": "1.0.2",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maximemoya/maximeFirstLibrary.git"
-  },
   "description": "a simple first library",
   "main": "dist/cjs/index.js",
+  "types": "dist/index.d.ts",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximemoya/maximeFirstLibrary.git"
+  },
   "scripts": {
-    "build": "rm -rf dist/ && tsc --outDir dist/esm && tsc --module CommonJS --outDir dist/cjs",
-    "start": "node ./dist/cjs/index.js"
+    "build": "rm -rf dist/ && tsc"
   },
   "keywords": [],
   "author": "",

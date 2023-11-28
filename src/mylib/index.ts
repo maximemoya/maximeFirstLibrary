@@ -1,0 +1,1 @@
+export { maximeFunctionHello } from './MaximeFunctions'
