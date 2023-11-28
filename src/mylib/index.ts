@@ -1,1 +1,1 @@
-export { maximeFunctionHello } from './MaximeFunctions'
+export * from './MaximeFunctions'

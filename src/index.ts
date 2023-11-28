@@ -1,1 +1,1 @@
-export * from './mylib'
+export * as MaximeSerialize from './mylib/MaximeFunctions'
