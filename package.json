@@ -1,6 +1,7 @@
 {
   "name": "maximefirstlibrary",
   "version": "1.0.0",
+  "repository": "https://github.com/maximemoya/maximeFirstLibrary.git",
   "description": "",
   "main": "index.js",
   "scripts": {
