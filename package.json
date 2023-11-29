@@ -1,6 +1,6 @@
 {
   "name": "maximefirstlibrary",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "a simple first library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
