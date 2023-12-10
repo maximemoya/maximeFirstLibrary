@@ -15,9 +15,9 @@ console.log(MaximeSerialize.readFileSync('./a/b/c.txt'));
 
 import { MaximeTime } from 'maximefirstlibrary'
 console.log(MaximeTime.getActualLocalDateTimeISO())
-console.log(MaximeTime.getActualDateTimeISO())
-console.log(MaximeTime.getActualDateTimeUTC())
 console.log(MaximeTime.getActualLocalDateTime())
 console.log(MaximeTime.getActualLocalDate())
 console.log(MaximeTime.getActualLocalTime())
+console.log(MaximeTime.getActualDateTimeISO())
+console.log(MaximeTime.getActualDateTimeUTC())
 ```
