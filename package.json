@@ -12,7 +12,7 @@
     "url": "https://github.com/maximemoya/maximeFirstLibrary.git"
   },
   "scripts": {
-    "build": "rm -rf dist/ && tsc",
+    "build": "rm -rf dist/ && tsc && rm -rf dist/test/",
     "dev": "npm run build && node ./dist/index.js",
     "test": "npm run build && node ./dist/test/index.spec.js"
   },
