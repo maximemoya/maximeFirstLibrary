@@ -1,6 +1,6 @@
 {
   "name": "maximefirstlibrary",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "a simple first library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "rm -rf dist/ && tsc",
-    "dev": "npm run build && node ./dist/index.js"
+    "dev": "npm run build && node ./dist/index.js",
+    "test": "npm run build && node ./dist/test/index.spec.js"
   },
   "keywords": [
     "maxime-libs"
