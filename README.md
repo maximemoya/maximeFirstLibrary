@@ -18,14 +18,19 @@ console.log(MaximeSerialize.readFileSync('./a/b/c.txt'));
 
 import { MaximeTime } from 'maximefirstlibrary'
 
-console.log(MaximeTime.getActualDateTimeISO())
 console.log(MaximeTime.getActualDateTimeUTC())
-console.log(MaximeTime.getActualLocalDate())
+console.log(MaximeTime.getActualDateTimeISO())
 console.log(MaximeTime.getActualLocalDateTimeISO())
-console.log(MaximeTime.getActualLocalDateTimeObject())
+console.log(MaximeTime.getActualLocalDate())
 console.log(MaximeTime.getActualLocalTime24())
+console.log(MaximeTime.getActualLocalDateTimeObject())
 
 const date1 = new Date(1900, 1, 1, 1, 1, 1)
+console.log(MaximeTime.getDateTimeUTCFrom(date1))
+console.log(MaximeTime.getDateTimeISOFrom(date1))
+console.log(MaximeTime.getLocalDateTimeISOFrom(date1))
+console.log(MaximeTime.getLocalDateFrom(date1))
+console.log(MaximeTime.getLocalTime24From(date1))
 console.log(MaximeTime.getLocalDateTimeObjectFrom(date1))
 
 const date2 = new Date(1900, 1, 1, 1, 1, 2)
@@ -51,6 +56,18 @@ console.log('is date2 equal date1 according day ? ', MaximeTime.isDateEqual(date
 console.log('is date2 equal date1 according hour ? ', MaximeTime.isDateEqual(date2, date1, "hour"))
 console.log('is date2 equal date1 according minute ? ', MaximeTime.isDateEqual(date2, date1, "minute"))
 console.log('is date2 equal date1 according second ? ', MaximeTime.isDateEqual(date2, date1, "second"))
+
+---------------------------------------------------------
+
+import { MaximeScreen } from 'maximefirstlibrary'
+
+const screenSizeX = 100
+const screenSizeY = 400
+let posX = 50
+let posY = 50
+MaximeScreen.Zone = "LEFT" | "UP" | "RIGHT" | "DOWN" | "CENTER"
+console.log(MaximeScreen.getPositionZone(screenSizeX, screenSizeY, posX, posY)) // => "UP"  
+
 ```
 
 ## package.json to make a lib
